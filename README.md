@@ -10,3 +10,7 @@ Clone the current repository and run the following from the root of the reposito
 npm i -g lerna yarn tsc ts-node ts-node-dev typescript
 lerna bootstrap
 ```
+### Trace API calls and Monitor API performance, health and usage statistics
+
+After setting up [swagger-stats](https://github.com/slanatech/swagger-stats) middleware in app and after server start,
+go to the url *http:/<your app host:port>/swagger-stats/ux* for the statistics

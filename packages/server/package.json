@@ -17,6 +17,7 @@
         "jsonwebtoken": "^8.5.1",
         "pino": "^5.13.4",
         "pino-http": "^4.3.0",
+        "speakeasy": "^2.0.0",
         "swagger-stats": "^0.95.17",
         "swagger-ui-express": "^4.1.1",
         "yamljs": "^0.3.0"
@@ -31,6 +32,7 @@
         "@types/jsonwebtoken": "^8.3.4",
         "@types/pino": "^5.8.10",
         "@types/pino-http": "^4.3.1",
+        "@types/speakeasy": "^2.0.5",
         "@types/swagger-stats": "^0.95.2",
         "@types/swagger-ui-express": "^3.0.1",
         "@types/yamljs": "^0.2.30",

@@ -2,6 +2,7 @@ import cors from 'cors'
 import express, { Express } from 'express'
 import helmet from 'helmet'
 import { unauthorisedErrorHandler } from './middleware'
+import { router } from './routes'
 
 const addMiddleware: (app: Express) => Express = app => {
   app.use(express.json())
@@ -18,6 +19,7 @@ const addMiddleware: (app: Express) => Express = app => {
     // app.use('/api-docs', serve, setup(swaggerDoc))
   }
 
+  app.use(router)
   app.use('/', (_, res) => res.json({ message: 'Welcome' }))
   app.use(unauthorisedErrorHandler)
 

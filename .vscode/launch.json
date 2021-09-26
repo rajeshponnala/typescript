@@ -26,6 +26,27 @@
         "name": "Attach to Chrome",
         "port": 9222,
         "webRoot": "${workspaceFolder}"
+      },
+      {
+        "type": "node",
+        "request": "launch",
+        "name": "Typescript Better Practices",
+        "program": "${workspaceFolder}/packages/typescript-best-practices/src/${input:typescripBetterPractices}",
+        "preLaunchTask": "npm: build - packages/typescript-best-practices",
+        "sourceMaps": true,
+        "outputCapture": "std",
+        "outFiles": ["${workspaceFolder}/packages/typescript-best-practices/dist/**/*.js"],
+      }
+    ],
+    "inputs": [
+      {
+        "type": "pickString",
+        "id": "typescripBetterPractices",
+        "description": "What program you want to launch?",
+        "options": [
+          "computeFrequency.ts",
+          "removeDuplicateChars.ts",
+        ]
       }
     ]
   }

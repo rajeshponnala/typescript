@@ -1,0 +1,24 @@
+{
+  "extends": "../../tsconfig.base.json",
+  // "references": [
+  //   {
+  //     "path": "../common"
+  //   }
+  // ],
+  "compilerOptions": {
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "module": "commonjs",
+    "baseUrl": "src",
+    "outDir": "dist",
+    "sourceMap": true
+  },
+  "include": [
+    "src"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist",
+    "src/**/*.test.ts"
+  ]
+}
